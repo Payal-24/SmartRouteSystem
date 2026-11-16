@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartRoute - Path Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SmartRoute</h1>
+        <p>Find the smartest path to your destination.</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <h2>Route Planner</h2>
+
+            <div class="legend">
+                <span>🟢 Start</span>
+                <span>🔴 Destination</span>
+                <span>⬛ Obstacle</span>
+                <span>🟡 Route</span>
+            </div>
+
+            <button id="findPath">Find Shortest Route</button>
+            <button id="reset">Reset Grid</button>
+
+            <p id="result">Your route will appear here.</p>
+        </section>
+
+        <section class="map-section">
+            <div id="grid"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
